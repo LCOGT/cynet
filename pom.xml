@@ -6,7 +6,7 @@
    <version>22.09.15</version>
    <!-- Remember to change the name of the two shared objects each time the pom version is bumped. -->
    <name>cynet shared library</name>
-   <description>QHY shared libraries and resources.</description>
+   <description>CYNet shared libraries and resources for new YFOSC controller.</description>
    <parent>
       <artifactId>lcogt-pom</artifactId>
       <groupId>org.lcogt</groupId>
@@ -18,6 +18,18 @@
    </properties>
 
    <profiles>
+      <!-- Rocky 8 -->
+      <profile>
+         <id>R8_64bit</id>
+         <activation>
+            <os>
+               <arch>amd64</arch>
+            </os>
+         </activation>
+         <properties>
+            <rpm.meta.arch>x86_64</rpm.meta.arch>
+         </properties>
+      </profile>
       <!-- Centos 7 -->
       <profile>
          <id>C7_64bit</id>
