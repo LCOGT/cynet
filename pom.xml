@@ -3,7 +3,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>cynet</groupId>
    <artifactId>cynet</artifactId>
-   <version>22.09.15</version>
+   <version>22.10.25</version>
    <!-- Remember to change the name of the two shared objects each time the pom version is bumped. -->
    <name>cynet shared library</name>
    <description>CYNet shared libraries and resources for new YFOSC controller.</description>
